@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סימולציה אינטראקטיבית</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geogebra/5.0.678.0/deployggb.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>סימולציה אינטראקטיבית</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="parameter1">פרמטר 1:</label>
+                <input type="range" id="parameter1" class="slider" min="0" max="10" step="0.1" value="5">
+                <span id="parameter1-value">5</span>
+            </div>
+            <div class="control-group">
+                <label for="parameter2">פרמטר 2:</label>
+                <input type="range" id="parameter2" class="slider" min="0" max="10" step="0.1" value="5">
+                <span id="parameter2-value">5</span>
+            </div>
+        </div>
+
+        <div id="ggb-element"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
